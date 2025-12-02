@@ -132,28 +132,28 @@
     }
   },
   "dependencies": {
-    "magic-string": "^0.30.17",
-    "unplugin": "^2.3.5",
+    "magic-string": "^0.30.21",
+    "unplugin": "^2.3.11",
     "unplugin-copy": "^4.0.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.14.1",
-    "@nuxt/kit": "^3.17.5",
-    "@nuxt/schema": "^3.17.5",
-    "@types/node": "^22.15.31",
-    "bumpp": "^10.1.1",
-    "chalk": "^5.4.1",
-    "eslint": "^9.28.0",
+    "@antfu/eslint-config": "^6.2.0",
+    "@nuxt/kit": "^4.2.1",
+    "@nuxt/schema": "^4.2.1",
+    "@types/node": "^22.19.1",
+    "bumpp": "^10.3.2",
+    "chalk": "^5.6.2",
+    "eslint": "^9.39.1",
     "esno": "^4.8.0",
     "fast-glob": "^3.3.3",
-    "nodemon": "^3.1.10",
-    "rolldown": "^1.0.0-beta.14",
-    "rollup": "^4.43.0",
-    "taze": "^19.1.0",
-    "tsup": "^8.5.0",
-    "typescript": "^5.8.3",
-    "vite": "^6.3.5",
-    "vitest": "^3.2.3",
-    "webpack": "^5.99.9"
+    "nodemon": "^3.1.11",
+    "rolldown": "^1.0.0-beta.52",
+    "rollup": "^4.53.3",
+    "taze": "^19.9.2",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.6",
+    "vitest": "^4.0.14",
+    "webpack": "^5.103.0"
   }
 }
