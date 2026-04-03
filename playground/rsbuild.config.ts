@@ -1,5 +1,5 @@
-import { defineConfig } from '@rsbuild/core'
-import UnpluginCesium from '../src/rspack'
+import { defineConfig } from '@rsbuild/core';
+import UnpluginCesium from '../src/rspack';
 
 export default defineConfig({
   html: {
@@ -25,4 +25,4 @@ export default defineConfig({
       ],
     },
   },
-})
+});

@@ -5,6 +5,7 @@
 Quickly integrate CesiumJS into various bundlers.
 
 ## Features
+
 - ✨ Support Vite, Webpack, Vue CLI, Rspack, Rollup, esbuild and more, powered by unplugin.
 - ⚡️ No need to wait for Cesium static files to be copied in Vite development mode
 - 🦾 Full TypeScript support.
@@ -21,21 +22,24 @@ pnpm i unplugin-cesium -D
 # yarn
 yarn add unplugin-cesium -D
 ```
+
 ## Example
 
 ### Vite
+
 ```ts
 // vite.config.ts
-import UnpluginCesium from 'unplugin-cesium/vite'
+import UnpluginCesium from 'unplugin-cesium/vite';
 
 export default defineConfig({
   plugins: [
     UnpluginCesium({ /* options */ }),
   ],
-})
+});
 ```
 
 ### Vue CLI
+
 ```ts
 // vue.config.js
 module.exports = {
@@ -43,10 +47,11 @@ module.exports = {
   plugins: [
     require('unplugin-cesium/webpack').default({ /* options */ }),
   ],
-}
+};
 ```
 
 ### Webpack
+
 ```ts
 // webpack.config.js
 module.exports = {
@@ -54,13 +59,14 @@ module.exports = {
   plugins: [
     require('unplugin-cesium/webpack').default({ /* options */ }),
   ],
-}
+};
 ```
 
 ### Rsbuild
+
 ```ts
 // rsbuild.config.ts
-import UnpluginCesium from 'unplugin-cesium/rspack'
+import UnpluginCesium from 'unplugin-cesium/rspack';
 
 export default defineConfig({
   tools: {
@@ -70,10 +76,11 @@ export default defineConfig({
       ],
     },
   },
-})
+});
 ```
 
 ## Options
+
 ```ts
 export interface UnpluginCesiumOptions {
   /**
@@ -81,18 +88,18 @@ export interface UnpluginCesiumOptions {
    * If you have configured a CDN URL for these static files, you can also directly specify the CDN URL and set `copyStaticFiles` to `false`.
    * @default '/cesiumStatic'
    */
-  cesiumBaseUrl?: string
+  cesiumBaseUrl?: string;
 
   /**
    * If you have set a similar `base` in vite or `publicPath` in webpack, you also need to set the same parameter here.
    * @default '/'
    */
-  base?: string
+  base?: string;
 
   /**
    * Whether to copy static files to the `cesiumBaseUrl` directory.
    * @default true
    */
-  copyStaticFiles?: boolean
+  copyStaticFiles?: boolean;
 }
 ```

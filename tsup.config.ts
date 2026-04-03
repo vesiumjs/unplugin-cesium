@@ -1,4 +1,4 @@
-import type { Options } from 'tsup'
+import type { Options } from 'tsup';
 
 export default <Options>{
   entryPoints: [
@@ -10,4 +10,4 @@ export default <Options>{
   cjsInterop: true,
   splitting: true,
   onSuccess: 'npm run build:fix',
-}
+};
